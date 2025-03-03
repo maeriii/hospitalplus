@@ -1,0 +1,46 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>All Appointments</h1>
+    <div>
+    {% for x in all %}
+        <p class="fw-bold text-primary">{{ x.name }}</p>
+        <p> <strong>Phone</strong>{{ x.email }}</p>
+        <p> <strong>Date and Time</strong>{{ x.date }}</p>
+        <p> <strong>department</strong>{{ x.department }}</p>
+        <p> <strong>doctor</strong>{{ x.doctor }}</p>
+        <p> <strong>message</strong>{{ x.message }}</p>
+
+
+        <div class="card w-30">
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
